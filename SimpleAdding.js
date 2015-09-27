@@ -1,4 +1,5 @@
-/*Have the function SimpleAdding(num) add up all the numbers from 1 to num. For the test cases, the parameter num will be any number from 1 to 1000. */
+/*Solved by Alexander Black on 02/24/15.Have the function SimpleAdding(num) add up all the numbers from 
+1 to num. For the test cases, the parameter num will be any number from 1 to 1000. */
 
 function SimpleAdding(num) { 
 
@@ -11,7 +12,5 @@ function SimpleAdding(num) {
   return num
          
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-SimpleAdding(readline());           
+
+SimpleAdding();           

@@ -1,10 +1,9 @@
-/*Have the function LongestWord(sen) take the sen parameter being passed and return the largest word in the string. 
+/*Solved by Alexander Black Jr. on 02/13/15. Have the function LongestWord(sen) take the sen parameter being passed and return the largest word in the string. 
 If there are two or more words that are the same length, return the first word from the string with that length. 
 Ignore punctuation and assume sen will not be empty. */
 
 function LongestWord(sen) { 
-
-  // code goes here  
+ 
   var sentence = sen.replace(/(\W+)/g, ' ');
   sen = sentence.replace(/\d+/g, '');
   var separateWord = sen.split(' ');
@@ -19,7 +18,4 @@ function LongestWord(sen) {
        }
    }sen = wordContainer;return sen; 
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-LongestWord(readline());  
+LongestWord();  

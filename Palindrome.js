@@ -1,36 +1,19 @@
-/*Have the function Palindrome(str) take the str parameter being passed and return the string true if the parameter is a palindrome, 
-(the string is the same forward as it is backward) otherwise return the string false. For example: "racecar" is also "racecar" backwards. 
-Punctuation and numbers will not be part of the string.*/
+/*Created by Alexander Black Jr. on 08/31/15. Have the function Palindrome(str) take the str parameter being 
+passed and return the string true if the parameter is a palindrome,(the string is the same forward as it is backward) 
+otherwise return the string false. For example: "racecar" is also "racecar" backwards. Punctuation and numbers will 
+not be part of the string.*/
 
-function Palindrome(str) { 
-
-  // code goes here    
-  var output = str.match(/[a-z]/ig);
-  console.log(output);
+function Palindrome(str) {
   
-  var word = output.reverse();
-  console.log(word);
-  
- 
-  for(var i = 0; i < output.length; i++){
-    for(var j = 0; j < word.length; j++){
-      if(output[i] != word[j]){
-        console.log(false);
-        break;
-        return false;
-      }else{
-        console.log(true);
-        return true;
-      }//end of if/else
-    } break;//end of inside for
-  }//end of outside for
-
-
-
-  
-         
+  var forwards = str.toLowerCase().match(/[a-z0-9]/g).join(''); 
+  var backwards = str.toLowerCase().match(/[a-z0-9]/g).reverse().join(''); 
+  if(forwards.length === backwards.length && forwards === backwards){
+    console.log(true);
+	return true;
+  }else{
+	 console.log(false);
+    return false;
+  }
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-Palindrome(readline());           
+
+Palindrome("A man, a plan, a canal. Panama");           

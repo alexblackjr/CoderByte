@@ -1,12 +1,10 @@
-/*Have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. 
+/*Solved by Alexander Black Jr. on 01/25/15. Have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. 
  Replace every letter in the string with the letter following it in the alphabet (ie. c becomes d, z becomes a). 
  Then capitalize every vowel in this new string (a, e, i, o, u) and finally return this modified string. */
  
- //This was my first exercise so pls excuse the lack of regex
  function LetterChanges(str) { 
 
-  // code goes here  
-   var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var vowel = ['a','e','i','o','u'];
   var separate = str.split("");
   var reconnect = [];;
@@ -31,7 +29,5 @@
     return str;
 
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-LetterChanges(readline());           
+
+LetterChanges();           
